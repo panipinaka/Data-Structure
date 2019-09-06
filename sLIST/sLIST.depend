@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1567746349 source:e:\data science lab\ada lab\slist\slist .c
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<stdbool.h>
+	"slist .h"
+
+1567746178 e:\data science lab\ada lab\slist\slist .h
+	<stdint.h>
+
