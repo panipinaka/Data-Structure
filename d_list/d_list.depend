@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1567926216 source:e:\data science lab\ada lab\d_list\slist_double.c
+	<stdlib.h>
+	<stddef.h>
+	<assert.h>
+	"slist_double.h"
+
+1567923740 e:\data science lab\ada lab\d_list\slist_double.h
+	<stdint.h>
+
+1567925920 source:e:\data science lab\ada lab\d_list\main_double.c
+	<assert.h>
+	"slist_double.h"
+
