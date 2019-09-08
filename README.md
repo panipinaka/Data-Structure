@@ -2,5 +2,5 @@
 C program on single linkedlist and double linkedlist data-structure 
 
 This code is made on codeblocks 
-To run this code use codeblocks and click on import existing project import .cbp file 
-# (keep .cbp .c .h and main file in one folder)
+To run this code use codeblocks,click on import existing project and import .cbp file 
+# (keep .cbp, .c, .h and main file in one folder)
