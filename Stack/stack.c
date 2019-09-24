@@ -8,7 +8,7 @@
 Stack stack_new(int32_t size)
 {
 	size = (size>0 && size<MAX_DEPTH)?size:MAX_DEPTH;
-    Stack stk = {" ",-1,size};
+    Stack stk = {0,-1,size};
     return stk;
 }
 
@@ -24,12 +24,11 @@ int32_t stack_empty(const Stack *stk)
 	return(stk->top==-1);
 }
 
-Stack* stack_push(Stack *stk,char element,Stack_Result * res)
+Stack* stack_push(Stack *stk,dtype element,Stack_Result * res)
 {
 	assert(stk!=NULL);
 	if(stk->top+1<stk->size)
 	{
-		//stk->top++;
 		stk->data[++stk->top]=element;
 
 		res->data=element;

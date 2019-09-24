@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1569317962 source:e:\big data\@data science lab\ada lab\git-ds\stack\stack.c
+	<stdint.h>
+	"stack.h"
+	<assert.h>
+	<stddef.h>
+	<stdlib.h>
+
+1569317755 e:\big data\@data science lab\ada lab\git-ds\stack\stack.h
+	<stdint.h>
+	<stddef.h>
+	<stdlib.h>
+
+1569317738 source:e:\big data\@data science lab\ada lab\git-ds\stack\stack_main.c
+	"stack.h"
+	<stdint.h>
+	<assert.h>
+	<stddef.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+

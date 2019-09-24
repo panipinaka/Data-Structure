@@ -4,6 +4,7 @@
 #define MAX_DEPTH 32
 #include<stddef.h>
 #include<stdlib.h>
+#define dtype uint32_t
 
 #define STACK_OK 1
 #define STACK_FULL 2
@@ -14,8 +15,7 @@ typedef struct _stackResult_ Stack_Result;
 
 struct _stack_
 {
-	char data[MAX_DEPTH];
-	//int32_t data[MAX_DEPTH];
+	dtype data[MAX_DEPTH];
 	int32_t top;
 	int32_t size;
 
@@ -23,14 +23,12 @@ struct _stack_
 
 struct _stackResult_
 {
-	char data;
-
-	//int32_t data;
+	dtype data;
 	int32_t status;
 };
 
 Stack stack_new(int32_t size);
-Stack* stack_push(Stack *stk,char data,Stack_Result * res);
+Stack* stack_push(Stack *stk,dtype data,Stack_Result * res);
 Stack* stack_pop(Stack *stk,Stack_Result *res);
 Stack* stack_peek(Stack *stk,Stack_Result *res);
 
