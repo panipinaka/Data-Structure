@@ -55,8 +55,11 @@ int postfix(char p[20])
 	Stack_Result res;
 	for(int i=0;i<strlen(p);i++)
     {
+
+        printf("%d",p[i]);
         if(isdigit(p[i]))
         {
+            //printf("%d",p[i]);
             stk=stack_push(stk,p[i],&res);
         }
         else
@@ -91,7 +94,8 @@ int postfix(char p[20])
     }
 
 stk = stack_peek(stk,&res);
-assert(res.data=='6');
+//printf("%d",res.data);
+assert(res.data=='11');
 
 }
 void test_empty_stack()
@@ -104,20 +108,32 @@ void test_empty_stack()
 
 void test_two_empty_stack()
 {
-
-
+    Stack s = stack_new(2);
+	Stack *stk = &s;
+	Stack_Result res;
+	stk=stack_push(stk,10,&res);
+	stk=stack_peek(stk,&res);
+	assert(res.status==STACK_OK && res.data==10);
+	stk=stack_push(stk,20,&res);
+	assert(stack_full(stk)==1);
+    stk=stack_push(stk,30,&res);
+    assert(res.status==STACK_FULL);
+    stk=stack_pop(stk,&res);
+    stk=stack_pop(stk,&res);
+    stk=stack_pop(stk,&res);
+    assert(res.status==STACK_EMPTY);
 }
 
 int main()
 {
     test_empty_stack();
-    test_two_empty_stack()
-	//char c[10] = "}((]";
-	//char c1[20] = "[({})]";
+    test_two_empty_stack();
+	char c[10] = "}((]";
+	char c1[20] = "[({})]";
     //balancing_symbols(c);
-	//balancing_symbols(c1);
-	//char p[20]="423+1*+3-";
-	//postfix(p);
+	balancing_symbols(c1);
+	//char p[20]="235*+6-";
+	postfix(p);
 	return 0;
 
 }

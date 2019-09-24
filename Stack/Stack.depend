@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1569320542 source:e:\big data\@data science lab\ada lab\git-ds\stack\stack.c
+1569321140 source:e:\big data\@data science lab\ada lab\git-ds\stack\stack.c
 	<stdint.h>
 	"stack.h"
 	<assert.h>
