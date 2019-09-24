@@ -8,7 +8,7 @@
 Stack stack_new(int32_t size)
 {
 	size = (size>0 && size<MAX_DEPTH)?size:MAX_DEPTH;
-    Stack stk = {0,-1,size};
+    Stack stk = {{0},-1,size};
     return stk;
 }
 

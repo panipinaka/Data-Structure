@@ -30,7 +30,6 @@ struct _queueResult_
 Queue queue_new(uint32_t size);
 uint32_t queue_full(Queue *q);
 uint32_t queue_empty(Queue *q);
-//Queue* queue_empty(Queue *q);
 Queue* queue_add(Queue *q, int32_t element, Queue_Result *res);
 Queue* queue_delete(Queue *q,Queue_Result *res);
 

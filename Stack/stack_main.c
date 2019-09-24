@@ -94,15 +94,30 @@ stk = stack_peek(stk,&res);
 assert(res.data=='6');
 
 }
+void test_empty_stack()
+{
+    Stack s = stack_new(5);
+	Stack *stk = &s;
+	assert(stack_full(stk)==0);
+    assert(stack_empty(stk));
+}
+
+void test_two_empty_stack()
+{
+
+
+}
 
 int main()
 {
-	char c[10] = "}((]";
-	char c1[20] = "[({})]";
-    balancing_symbols(c);
-	balancing_symbols(c1);
-	char p[20]="423+1*+3-";
-	postfix(p);
+    test_empty_stack();
+    test_two_empty_stack()
+	//char c[10] = "}((]";
+	//char c1[20] = "[({})]";
+    //balancing_symbols(c);
+	//balancing_symbols(c1);
+	//char p[20]="423+1*+3-";
+	//postfix(p);
 	return 0;
 
 }
