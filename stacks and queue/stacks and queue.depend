@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1570220815 source:e:\bigdata\@data science lab\ada lab\git-ds\stacks and queue\queue.c
+	<stddef.h>
+	<stdlib.h>
+	<stdint.h>
+	<assert.h>
+	"queue.h"
+
+1569319463 e:\bigdata\@data science lab\ada lab\git-ds\stacks and queue\queue.h
+	<stdint.h>
+	<stddef.h>
+	<stdlib.h>
+
+1569321140 source:e:\bigdata\@data science lab\ada lab\git-ds\stacks and queue\stack.c
+	<stdint.h>
+	"stack.h"
+	<assert.h>
+	<stddef.h>
+	<stdlib.h>
+
+1569321067 e:\bigdata\@data science lab\ada lab\git-ds\stacks and queue\stack.h
+	<stdint.h>
+	<stddef.h>
+	<stdlib.h>
+
+1570221551 source:e:\bigdata\@data science lab\ada lab\git-ds\stacks and queue\stack_queue_main.c
+	"queue.h"
+	"stack.h"
+	<stdint.h>
+	<assert.h>
+	<stddef.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+

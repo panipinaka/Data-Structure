@@ -28,8 +28,10 @@ Queue* queue_add(Queue *q,int32_t element,Queue_Result *res)
     if(q->count <q->size)
     {
         q->data[q->head]= element;
+        //printf("%d",q->data[q->head]);
         q->head = (q->head+1)%q->size;
         ++q->count;
+        res->data=element;
         res->status = QUEUE_OK;
     }
     else{
