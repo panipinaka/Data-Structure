@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1570280604 source:e:\bigdata\@data science lab\ada lab\git-ds\bst\main_bst.c
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<assert.h>
+	"bst.h"
+
+1570280674 e:\bigdata\@data science lab\ada lab\git-ds\bst\bst.h
+	<stdint.h>
+	<assert.h>
+
+1570280661 source:e:\bigdata\@data science lab\ada lab\git-ds\bst\bst.c
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	"bst.h"
+
