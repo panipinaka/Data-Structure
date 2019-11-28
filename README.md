@@ -1,5 +1,5 @@
 # Data-Structure
-C program on single linkedlist and double linkedlist data-structure 
+C program on data-structure 
 
 This code is built on codeblocks 
 To run this code use codeblocks,click on import existing project and import .cbp file 
